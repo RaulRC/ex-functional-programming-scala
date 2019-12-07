@@ -49,13 +49,12 @@ object Functions extends App {
 
   // 4. Prime numbers
   def isPrime(n: Int): Boolean = {
-    def isDivisibleBy(a: Int, b: Int): Boolean = {
+    def isDivisibleBy(a: Int, b: Int): Boolean =
       if (b > 1) (a % b == 0) || isDivisibleBy(a, b-1) else false
-    }
     !isDivisibleBy(n, n-1)
   }
 
-  // 4. Prime numbers (prof corrected
+  // 4. Prime numbers (prof corrected)
   def isPrimeCorrected(n: Int): Boolean = {
     def isPrimeUntil(t: Int): Boolean =
       if (t <= 1) true else n % t != 0 && isPrimeUntil(t-1)
