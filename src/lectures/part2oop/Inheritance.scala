@@ -5,7 +5,7 @@ package lectures.part2oop
  * @author raul.reguillo on 2020-02-11
  */
 
-object InheritanceAndTraits extends App{
+object Inheritance extends App{
 
   // single class inheritance
   class Animal{
