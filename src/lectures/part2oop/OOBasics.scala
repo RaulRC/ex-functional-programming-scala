@@ -80,7 +80,8 @@ class Counter(val value: Int = 0 ){
   def currentCount(): Int = this.value // could be omitted
   def increment: Counter = {
     println("Incrementing...")
-    new Counter(this.value + 1) // immutability
+    new Counter(this.value + 1) // immutability in Functional, an instance should not be modified, return a new
+    // object instead
   }
   def decrement: Counter = {
     println("Decrementing...")

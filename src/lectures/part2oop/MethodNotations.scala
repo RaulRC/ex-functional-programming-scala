@@ -7,6 +7,7 @@ object MethodNotations extends App {
     def +(person: Person): String = s"${this.name} is hanging out with ${person.name}"
     def +(nickname: String): Person = new Person(s"${this.name} (${nickname})", this.favoriteMovie)
     def unary_! : String = s"$name, what the heck!!"
+    // unary only works for +, -, !, ~
     def isAlive: Boolean = true
     def apply(): String = s"Hi, my name is ${name} and I like ${favoriteMovie}"
     def apply(times: Int): String = s"${name} watched ${favoriteMovie} ${times} time(s)"
