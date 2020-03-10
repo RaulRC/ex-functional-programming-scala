@@ -84,9 +84,8 @@ object ListTest extends App {
   val anotherListOfIntegers : MyList[Int] = new Cons(1, new Cons(2, new Cons(3, Empty)))
 
   println((listOfIntegers ++ anotherListOfIntegers))
-  println(listOfIntegers.flatMap(new Function1[Int, MyList[Int]]{
-    override def apply(elem: Int): MyList[Int] = new Cons(elem, new Cons(elem + 1, Empty))
-  }).toString)
+  println(listOfIntegers.flatMap(elem => new Cons(elem, new Cons(elem + 1, Empty))).toString)
+
 
   // case class
   println(cloneListOfIntegers == listOfIntegers)
