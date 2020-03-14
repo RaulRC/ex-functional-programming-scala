@@ -46,4 +46,14 @@ object MapFlatmapFilterFor extends App{
   // syntax overload
   list map { x => 2*x}
 
+  /*
+  1 - MyList support comprenhensions?
+    - map(f: A => B: MyList[B]
+    - filter(f: A => Boolean: MyList[A]
+    - flatMap(f: A => MyList[B]: MyList[B])
+
+  2 - A small collection of at most one element  - MayBe[+T]
+    - map, flatmap, filter
+   */
+
 }
