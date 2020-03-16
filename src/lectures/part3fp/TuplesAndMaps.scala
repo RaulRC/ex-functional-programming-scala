@@ -44,4 +44,19 @@ object TuplesAndMaps extends App{
   println(List(("Raúl", 555)).toMap)
   val names = List("Raúl", "Palo", "Ramón", "Rebe")
   println(names.groupBy(x => x.charAt(0)))
+
+  /*
+  1 . What would happen in I had two original entries "Jim" -> 555 and "JIM" -> 900 and tolower
+  2. Social network based on maps
+  Person = String
+  - add person
+  - remove
+  - friend/unfriend (mutual)
+
+  Statistics
+  - number of friends of a person
+  - person with most friends
+  - how many people have no friends
+  - if there is a social connection between two people (direct or not)
+   */
 }
